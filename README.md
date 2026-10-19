@@ -23,7 +23,7 @@ git branch -M main
 git remote add origin https://github.com/Aman22kr/<repo>.git
 git push -u origin main
 ```
-Then in the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow in `.github/workflows/deploy.yml` builds and publishes `dist/` on every push to `main`.
+Then in the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow in `.github/workflows/deploy.yml` uses `npm ci` when `package-lock.json` exists (otherwise `npm install`), then builds and publishes `dist/` on every push to `main`.
 Routing uses `HashRouter` and Vite `base: './'`, so refreshes and direct links work under any repo name without rewrites.
 
 ## localStorage
