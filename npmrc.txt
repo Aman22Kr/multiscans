@@ -1,0 +1,4 @@
+# Rename this file to .npmrc to activate it.
+fund=false
+audit=false
+legacy-peer-deps=false

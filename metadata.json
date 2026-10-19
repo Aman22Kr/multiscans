@@ -1,0 +1,4 @@
+{
+  "name": "MultiScans",
+  "description": "Static multi-page demo recreation of a diagnostic-centre website: scans, lab tests, packages, search and localStorage-based saved items."
+}
